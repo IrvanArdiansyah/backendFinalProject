@@ -1,14 +1,5 @@
 const router = require('express').Router();
-const mysql = require('mysql')
-
-const db = mysql.createConnection ({
-    host: 'localhost',
-    user: 'Irvan',
-    password: 'Numpit27',
-    database: 'arsenic'
-});
-
-db.connect()
+const db = require('../connection')
 
 router.get('/menbelts', (req, res)=>{
     let sql = 'SELECT * FROM products_tbl where category_id = 1 and product_category_id = 2';
