@@ -36,5 +36,5 @@ app.use(showProductsRoute)
 
 
 app.listen(3320, ()=>{
-    console.log('server jalan di 3320')
+    console.log('3320')
 })
