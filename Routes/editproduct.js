@@ -3,6 +3,7 @@ const db = require('../connection')
 
 router.put('/edit/:product_id', (req, res) => {
     if (req.files) {
+        console.log(req.files)
         let product_name = req.body.product_name
         let product_description = req.body.product_description
         let material_description = req.body.material_description

@@ -5,7 +5,7 @@ router.get('/products', (req, res)=>{
     let sql = 'SELECT * FROM products_tbl';
     db.query(sql, (err, result)=>{
         if(err) throw err;
-        console.log(result);
+        // console.log(result);
         res.send(result);
     });
 });
